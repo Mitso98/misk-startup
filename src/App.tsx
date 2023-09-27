@@ -1,10 +1,12 @@
-import "./App.css";
+import Navbar from "./components/Navbar";
+import AppForm from "./components/AppForm";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold text-red-500 underline text-center">
-      Hello world!
-    </h1>
+    <div className="flex">
+      <Navbar />
+      <AppForm />
+    </div>
   );
 }
 
