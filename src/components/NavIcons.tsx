@@ -1,4 +1,4 @@
-const NavIcons = () => {
+const NavIcons: React.FC = () => {
   return (
     <div className="mt-14">
       {/* Hamburger icon */}

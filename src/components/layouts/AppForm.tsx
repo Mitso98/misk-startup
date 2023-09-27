@@ -1,10 +1,11 @@
+import Questions from "./Questions";
 import TopBar from "./TopBar";
 
-const AppForm = () => {
+const AppForm: React.FC = () => {
   return (
     <div className="w-full">
       <TopBar />
-      <h1>Questions</h1>
+      <Questions />
     </div>
   );
 };

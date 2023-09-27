@@ -1,13 +1,14 @@
-import Navbar from "./components/Navbar";
-import AppForm from "./components/AppForm";
+import Navbar from "./components/layouts/Navbar";
+import AppForm from "./components/layouts/AppForm";
+import "./App.css"
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="flex">
       <Navbar />
       <AppForm />
     </div>
   );
-}
+};
 
 export default App;
