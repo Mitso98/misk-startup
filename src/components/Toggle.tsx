@@ -13,7 +13,7 @@ const Toggle: React.FC<ToggleProbs> = ({ toggleOptions, checkBoxOption }) => {
   };
 
   return (
-    <div className="flex gap-6">
+    <div className="flex flex-col md:flex-row md:gap-6 items-stretch">
       {/* Check box */}
       {checkBoxOption && (
         <div className="flex items-center gap-3">

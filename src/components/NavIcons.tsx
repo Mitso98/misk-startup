@@ -4,9 +4,7 @@ const NavIcons: React.FC = () => {
       {/* Hamburger icon */}
       <div className="flex justify-center cursor-pointer">
         <svg
-          width="23"
-          height="19"
-          viewBox="0 0 23 19"
+          className="w-4 h-5 md:w-6 md:h-5"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -37,8 +35,7 @@ const NavIcons: React.FC = () => {
         {/* Home icon */}
         <div className="flex justify-center cursor-pointer">
           <svg
-            width="37"
-            height="36"
+            className="w-7 h-6 md:w-9 md:h-8"
             viewBox="0 0 37 36"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +72,7 @@ const NavIcons: React.FC = () => {
         {/* Checklist icon */}
         <div className="flex justify-center mt-10 cursor-pointer">
           <svg
-            width="34"
-            height="33"
+            className="w-6 h-7 md:w-8 md:h-9"
             viewBox="0 0 34 33"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
