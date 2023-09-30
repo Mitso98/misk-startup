@@ -1,5 +1,5 @@
 import Navbar from "./components/layouts/Navbar";
-import AppForm from "./components/layouts/AppForm";
+import AppForm from "./components/layouts/MainAppContainer";
 import "./App.css"
 
 const App: React.FC = () => {

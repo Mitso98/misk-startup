@@ -1,18 +1,19 @@
-import Toggle from "../Toggle";
-import { ToggleProbs } from "../Toggle";
+import CheckAndToggleButtons from "../layouts/CheckAndToggleButtons";
 
 interface FormGroupProps {
   title: string;
   type: string;
   subtitle: null | string;
-  rightDiv: null | ToggleProbs;
+  toggleOptions: null | { trueOption: string; falseOption: string };
+  checkBoxOption: null | string;
 }
 
 const FormGroup: React.FC<FormGroupProps> = ({
   title,
   type,
   subtitle,
-  rightDiv,
+  toggleOptions,
+  checkBoxOption,
 }) => {
   return (
     <div className="flex flex-col mb-3">
@@ -23,18 +24,15 @@ const FormGroup: React.FC<FormGroupProps> = ({
         <div>
           {title}
           <span className="text-mobile-text md:text-sm font-normal">
-            {" "}
             {subtitle || ""}
           </span>
         </div>
-        {rightDiv && (
-          <div>
-            <Toggle
-              checkBoxOption={rightDiv?.checkBoxOption}
-              toggleOptions={rightDiv?.toggleOptions}
-            ></Toggle>
-          </div>
-        )}
+        <div>
+          <CheckAndToggleButtons
+            checkBoxOption={checkBoxOption}
+            toggleOptions={toggleOptions}
+          ></CheckAndToggleButtons>
+        </div>
       </label>
       <input
         id={title}
